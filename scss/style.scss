@@ -15,13 +15,20 @@ h1 {
   margin-bottom: 50px;
 }
 section {
-  margin-bottom: 50px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fec;
+  margin-bottom: 30px;
   h2 {
     font-size: 32px;
     margin-bottom: 20px;
   }
   & > p {
+    font-size: 16px;
     margin-bottom: 20px;
+    mark {
+      font-size: 16px;
+    }
   }
   h3 {
     font-size: 20px;
@@ -33,12 +40,13 @@ section {
   display: flex;
   flex-wrap: wrap;
   & > div {
-    width: 240px;
-    padding: 0 30px 30px;
+    width: 220px;
+    padding: 0 20px 30px;
     text-align: center;
     img {
       width: 160px;
       height: 160px;
+      border-radius: 10px;
     }
     h4 {
       font-size: 18px;
@@ -48,12 +56,58 @@ section {
     }
   }
 }
+#links {
+  background-color: #eef;
+  ul {
+    margin-left: 50px;
+    list-style: decimal;
+    li {
+      font-size: 20px;
+      a {
+        font-size: 20px;
+        color: #00e;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          opacity: 0.7;
+        }
+        &:visited {
+          color: #00e;
+        }
+      }
+    }
+  }
+}
+#to_top {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 100%;
+  position: fixed;
+  z-index: 100;
+  bottom: 50px;
+  right: 50px;
+  &:before {
+    display: block;
+    content: "";
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-top: 20px solid #fff;
+    border-left: 20px solid #fff;
+    z-index: 100;
+    bottom: 68px;
+    right: 75px;
+    transform: rotateZ(45deg);
+  }
+}
 @media screen and (max-width: 768px) {
   * {
     font-size: 3vw;
   }
   main {
-    width: 90vw;
+    width: 96vw;
     margin: 5vw auto;
   }
   h1 {
@@ -61,13 +115,19 @@ section {
     margin-bottom: 5vw;
   }
   section {
-    margin-bottom: 5vw;
+    padding: 3vw;
+    border-radius: 2vw;
+    margin-bottom: 3vw;
     h2 {
       font-size: 4.4vw;
       margin-bottom: 2vw;
     }
     & > p {
+      font-size: 3.3vw;
       margin-bottom: 2vw;
+      mark {
+        font-size: 3.3vw;
+      }
     }
     h3 {
       font-size: 4vw;
@@ -77,7 +137,7 @@ section {
   .hearts {
     & > div {
       width: 30vw;
-      padding: 0 1vw 1vw;
+      padding: 0 1vw 2vw;
       img {
         width: 24vw;
         height: 24vw;
@@ -88,6 +148,30 @@ section {
       p {
         font-size: 3vw;
       }
+    }
+  }
+  #links {
+    ul {
+      margin-left: 5vw;
+      li {
+        font-size: 4vw;
+        a {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+  #to_top {
+    width: 10vw;
+    height: 10vw;
+    bottom: 5vw;
+    right: 5vw;
+    &:before {
+      width: 3vw;
+      height: 3vw;
+      border-width: 2vw 0 0 2vw;
+      bottom: 6.8vw;
+      right: 7.5vw;
     }
   }
 }
