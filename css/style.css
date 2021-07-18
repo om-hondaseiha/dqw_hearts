@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section > p {
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.hearts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hearts > div {
+  width: 240px;
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.hearts > div img {
+  width: 160px;
+  height: 160px;
+}
+
+.hearts > div h4 {
+  font-size: 18px;
+}
+
+.hearts > div p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 3vw;
+  }
+  main {
+    width: 90vw;
+    margin: 5vw auto;
+  }
+  h1 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+  section {
+    margin-bottom: 5vw;
+  }
+  section h2 {
+    font-size: 4.4vw;
+    margin-bottom: 2vw;
+  }
+  section > p {
+    margin-bottom: 2vw;
+  }
+  section h3 {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+  .hearts > div {
+    width: 30vw;
+    padding: 0 1vw 1vw;
+  }
+  .hearts > div img {
+    width: 24vw;
+    height: 24vw;
+  }
+  .hearts > div h4 {
+    font-size: 3.3vw;
+  }
+  .hearts > div p {
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
