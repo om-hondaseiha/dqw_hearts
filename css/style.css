@@ -73,6 +73,16 @@ section h3 {
   font-size: 16px;
 }
 
+.hearts > details {
+  width: 880px;
+}
+
+.hearts > details summary {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
 #links {
   background-color: #eef;
 }
@@ -173,6 +183,13 @@ section h3 {
   }
   .hearts > div p {
     font-size: 3vw;
+  }
+  .hearts > details {
+    width: 90vw;
+  }
+  .hearts > details summary {
+    font-size: 4vw;
+    margin-bottom: 1vw;
   }
   #links ul {
     margin-left: 5vw;
