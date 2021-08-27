@@ -110,9 +110,17 @@ section {
     transform: rotateZ(45deg);
   }
 }
+@media screen and (min-width: 769px) {
+  .sp {
+    display: none!important;
+  }
+}
 @media screen and (max-width: 768px) {
   * {
-    font-size: 2.6vw;
+    font-size: 3vw;
+  }
+  .pc {
+    display: none!important;
   }
   main {
     width: 96vw;
@@ -151,10 +159,10 @@ section {
         height: 24vw;
       }
       h4 {
-        font-size: 2.8vw;
+        font-size: 3.3vw;
       }
       p {
-        font-size: 2.6vw;
+        font-size: 3vw;
       }
     }
     & > details {

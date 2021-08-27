@@ -138,9 +138,18 @@ section h3 {
           transform: rotateZ(45deg);
 }
 
+@media screen and (min-width: 769px) {
+  .sp {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   * {
     font-size: 3vw;
+  }
+  .pc {
+    display: none !important;
   }
   main {
     width: 96vw;
@@ -160,11 +169,11 @@ section h3 {
     margin-bottom: 2vw;
   }
   section > p {
-    font-size: 3.3vw;
+    font-size: 3vw;
     margin-bottom: 2vw;
   }
   section > p mark {
-    font-size: 3.3vw;
+    font-size: 3vw;
   }
   section h3 {
     font-size: 4vw;
